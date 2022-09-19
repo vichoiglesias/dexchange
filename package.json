@@ -1,0 +1,14 @@
+{
+  "name": "dexchange",
+  "version": "1.0.0",
+  "description": "A distributed exchange",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "dependencies": {
+    "grenache-nodejs-http": "^0.7.12",
+    "grenache-nodejs-link": "^0.7.12",
+    "grenache-nodejs-ws": "^0.7.10"
+  }
+}
