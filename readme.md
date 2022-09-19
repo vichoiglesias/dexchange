@@ -1,4 +1,4 @@
-# Partial solution
+# *Partial* solution
 
 
 ## How to run:
@@ -36,7 +36,9 @@ The requirements where:
 	
 	
 ## With more time
-- We could have multiple servers. I could find a correct way to use multiple servers with Grenache... this would allow for a truly decentralised exchange.
-- We are trusting the date that the clients give.
-- There's no type of security, login, and all that.
-- Test, tests and more tests...
+- We could have multiple servers that share some sort of state. I could find a correct way to use multiple servers with Grenache... this would allow for a truly decentralised exchange, that would be roubust in case one node fails.
+- We are trusting all the data that other clients give. In production this would be a no-no.
+-- I did't find a way to fix potential race conditions... after all, we are trusting date, amounts, prices coming from other clients without any kind of signature.
+-- In the same regard, There's no type of security, login, and all that.
+- We would have to implement test, tests and more tests...
+ 
