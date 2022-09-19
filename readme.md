@@ -33,12 +33,12 @@ The client will prompt you with the options to:
 
 
 The requirements where:
-- Each client will have its own instance of the orderbook
-	R: We have a OrderBook class that automatically syncs with a server (which I get is not the most decentraliced thing...).
+- Each client will have its own instance of the orderbook.
+*R:* We have a OrderBook class that automatically syncs with a server (which I get is not the most decentraliced thing...).
 - Clients submit orders to their own instance of orderbook. The order is distributed to other instances, too.
-	R: The client will create the order locally and then send it to the server. The server will return the updated orderbook with the new order.
+*R:* The client will create the order locally and then send it to the server. The server will return the updated orderbook with the new order.
 - If a client's order matches with another order, any remainer is added to the orderbook, too.
-	R: There is a simple match creating algorithm on the OrderBook class. If there is an extra amount to buy / sell, that extra will be added to the orderbook with the same date so it takes precedence over newer orders.
+*R:* There is a simple match creating algorithm on the OrderBook class. If there is an extra amount to buy / sell, that extra will be added to the orderbook with the same date so it takes precedence over newer orders.
 	
 	
 ## With more time
